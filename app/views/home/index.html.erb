@@ -1,0 +1,19 @@
+<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="relative py-16 bg-white overflow-hidden">
+    <div class="relative px-4 sm:px-6 lg:px-8">
+      <div class="text-lg max-w-prose mx-auto mb-6">
+        <p class="text-base text-center leading-6 text-blue-600 font-semibold tracking-wide uppercase">Circle of the Markup</p>
+        <h1 class="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">NPC Builder</h1>
+        <!--p class="text-xl text-gray-500 leading-8">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p-->
+      </div>
+      <div class="prose prose-lg text-gray-500 mx-auto">
+        <!--h3>Everything you need to get up and running</h3-->
+        <% @npcs.each do |npc| %>
+          <h3>Generate Name</h3>
+          <p><%= npc[:body] %></p>
+          <p><%= npc[:mannerisms] %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
